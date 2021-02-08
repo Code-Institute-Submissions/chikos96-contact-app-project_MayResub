@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_contacts")
 def get_contacts():
-    contacts = mongo.db.tasks.find()
+    contacts = list(mongo.db.tasks.find())
     return render_template("contacts.html", contacts=contacts)
 
 
