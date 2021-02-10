@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_contacts")
 def get_contacts():
-    contacts = (mongo.db.tasks.find())
+    contacts = (mongo.db.contacts.find())
     return render_template("contacts.html", contacts=contacts)
 
 
@@ -93,10 +93,20 @@ def logout():
 
 
 
-@app.route("/add_contacts")
+@app.route("/add_contacts", methods=["GET", "POST"])
 def add_contact():
-    return render_template("add_contacts.html")
+    if request.method == "POST":
+        contact = {
+            "contact_name": request.form.get("contact_name"),
+            "contact_number": request.form.get("contact_number"),
+            "contact_email": request.form.get("contact_email"),  
+        }
+        mongo.db.contacts.insert_one(contact)
+        flash("Contact Added")
+        return redirect(url_for("get_contacts"))
 
+    contacts = mongo.db.contacts.find().sort("contact_name", 1)
+    return render_template("add_contacts.html", contacts=contacts)
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
