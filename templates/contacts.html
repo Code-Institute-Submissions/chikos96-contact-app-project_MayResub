@@ -1,11 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% for contact in contacts %}
-    {{ contact.contact_name }}<br>
-    {{ contact.contact_number }}<br>
-    {{ contact.contact_email }}<br>
-{% endfor %}
+<!-- {% for contact in contacts %}
+{{ contact.contact_name }}<br>
+{{ contact.contact_number }}<br>
+{{ contact.contact_email }}<br>
+{% endfor %} -->
 
+<ul class="collapsible">
+    {% for contact in contacts %}
+    <li>
+        <div class="collapsible-header">
+            {{ contact.contact_name }} 
+        </div>
+        <div class="collapsible-body">
+            <p>{{ contact.contact_number }}</p>
+            <p>{{ contact.contact_email }}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
 
 {% endblock %}
