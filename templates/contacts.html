@@ -14,8 +14,9 @@
             {{ contact.contact_name }} 
         </div>
         <div class="collapsible-body">
-            <p>{{ contact.contact_number }}</p>
-            <p>{{ contact.contact_email }}</p>
+            <p>phone number: {{ contact.contact_number }}</p>
+            <p>email: {{ contact.contact_email }}</p>
+            <p>by: {{ contact.created_by}}</p>
         </div>
     </li>
     {% endfor %}

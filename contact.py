@@ -99,7 +99,8 @@ def add_contact():
         contact = {
             "contact_name": request.form.get("contact_name"),
             "contact_number": request.form.get("contact_number"),
-            "contact_email": request.form.get("contact_email"),  
+            "contact_email": request.form.get("contact_email"), 
+            "created by": session["user"] 
         }
         mongo.db.contacts.insert_one(contact)
         flash("Contact Added")
