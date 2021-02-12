@@ -127,6 +127,13 @@ def edit_contact(contact_id):
     return render_template("edit_contacts.html", contacts=contacts)
 
 
+@app.route("/delete_contacts/<contact_id>")
+def delete_contact(contact_id):
+    mongo.db.contacts.remove({"_id": ObjectId(contact_id)})
+    flash("Contact Deleted")
+    return redirect(url_for("get_contacts"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
