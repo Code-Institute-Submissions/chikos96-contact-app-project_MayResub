@@ -113,8 +113,17 @@ def add_contact():
 
 @app.route("/edit_contacts/<contact_id>", methods=["GET", "POST"])
 def edit_contact(contact_id):
+    if request.method == "POST":
+        submit = {
+            "contact_name": request.form.get("contact_name"),
+            "contact_number": request.form.get("contact_number"),
+            "contact_email": request.form.get("contact_email"),
+        }
+        mongo.db.contacts.update({"_id": ObjectId(contact_id)}, submit)
+        flash("Contact Updated")
+
     contacts = mongo.db.contacts.find_one({"_id": ObjectId(contact_id)})
-    contacts = mongo.db.contacts.find().sort("contact_name", 1)
+    contacts = mongo.db.categories.find().sort("contact_name", 1)
     return render_template("edit_contacts.html", contacts=contacts)
 
 
