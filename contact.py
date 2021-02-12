@@ -100,7 +100,7 @@ def add_contact():
             "contact_name": request.form.get("contact_name"),
             "contact_number": request.form.get("contact_number"),
             "contact_email": request.form.get("contact_email"), 
-            "created by": session["user"] 
+            "created_by": session["user"] 
         }
         mongo.db.contacts.insert_one(contact)
         flash("Contact Added")
@@ -108,6 +108,15 @@ def add_contact():
 
     contacts = mongo.db.contacts.find().sort("contact_name", 1)
     return render_template("add_contacts.html", contacts=contacts)
+
+
+
+@app.route("/edit_contacts/<contact_id>", methods=["GET", "POST"])
+def edit_contact(contact_id):
+    contacts = mongo.db.contacts.find_one({"_id": ObjectId(contact_id)})
+    contacts = mongo.db.contacts.find().sort("contact_name", 1)
+    return render_template("edit_contacts.html", contacts=contacts)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

@@ -1,24 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!-- {% for contact in contacts %}
-{{ contact.contact_name }}<br>
-{{ contact.contact_number }}<br>
-{{ contact.contact_email }}<br>
-{% endfor %} -->
-
 <ul class="collapsible">
     {% for contact in contacts %}
     <li>
         <div class="collapsible-header">
-            {{ contact.contact_name }} 
-            <a class="btn-small blue accent-2">Edit</a>
-            <a class="btn-small green accent-3">Done</a>
+            <strong>{{ contact.contact_name }}</strong> 
+            <a href="{{ url_for('edit_contact', contact_id=contact._id) }}" class="btn-small blue accent-2">Edit</a>
+            <a class="btn-small green accent-3">Delete</a>
         </div>
         <div class="collapsible-body">
-            <p>phone number: {{ contact.contact_number }}</p>
-            <p>email: {{ contact.contact_email }}</p>
-            <p>by: {{ contact.created_by}}</p>
+            <strong>phone number: {{ contact.contact_number }}</strong>
+            <strong>email: {{ contact.contact_email }}</strong>
+            <p><em>{{ contact.created_by}}</em></p>
         </div>
     </li>
     {% endfor %}
