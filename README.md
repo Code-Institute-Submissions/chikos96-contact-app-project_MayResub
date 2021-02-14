@@ -1,17 +1,24 @@
-# contact-app-project
+### Contact-App-Project
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+For my third milestone project, I have decided to create a contact app 
+for users so that they get to keep their information about his 
+or her contact.
  
 ## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+## UX Design
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+## User Stories
+
+# users
+# owners
+
+## Wireframe
+
+## Database
+
+## Data Design
+
 
 ## Features
 
@@ -30,19 +37,31 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+# Languages
+- [HTML]
+- [CSS]
+- [Javascript]
+- [Python]
 
+# Tools and Libraries
+- [Materialize](https://materializecss.com/)
+- [PEP8 Python Validator](http://pep8online.com/)
 - [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- [Git](https://git-scm.com/)
+- [Jshint](https://jshint.com/)
+- [HTML Validator](https://validator.w3.org/)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
+# External Hosting
+- [MongoDB](https://www.mongodb.com/)
+- [Heroku](http://heroku.com/)
+- [GitHub](https://github.com/)
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+I have struggled a lot when it comes to testing. However i was able to use some necessary measures to test 
+my app with various resources.
 
 1. Contact form:
     1. Go to the "Contact Us" page
@@ -70,12 +89,11 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
-### Media
-- The photos used in this site were obtained from ...
+### Code 
+- The code came from the Code Institute mini project which inspired me to do something
+different.
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I would like to thank Aaron for helping and supporting me with this project.
+- I would like to thank the Tutor Support for their maximum effort to assist me.
