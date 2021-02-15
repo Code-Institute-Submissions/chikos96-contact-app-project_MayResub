@@ -50,11 +50,37 @@ The functionality is structured to following CRUD: Create, Read, Update, and Del
 
 ## Existing Features
 
-### Structured
+### Structure
+- Navbar - I used Materialize with the basic navbar with the title and mobile-navbar with the
+links to sections: Home, Profile, Add Contact, Log Out. When the nav bar is resized, 
+you will see that the links on the right turn into a hamburger icon, an effect of class=sidenav-trigger functionality.
 
+### Forms
+- Register form: This provides interface to new users for sign up.
 
-### Form
+- Log In form: form that enable users to sign into already created account.
 
+- Add Contact form: contain fields that enable users to add new review to the website.
+
+- Edit Contact form: This form retrieves existing review data for revise.
+
+- Log out form: This form allows users to sign out from their account.
+
+### Home
+- The Home page will display collapsibles; accordion elements that expand when clicked on.
+It also has a welcoming title. The collapsible-header with delete and edit buttons for reviews while the 
+collapsible-body encapsulates the set of data stored about a particular instance of an entity.
+
+### Profile
+- The Profile section features exclusively for a user session. 
+  All collections per user are stored in their respective profile Page and secure to only be available to the owner.
+
+### Add New Contact
+- This section will have the form where the user will put theur contacts full name, telephone and email.
+
+### Security
+- To make the user authentication more secure, the Log In form integrates werkzeug security features namely:
+"generate_password_hash" and "check_password_hash". it is difficult to crack the passwords.
 
 ## Features Left to Implement
 - To add some background.
@@ -88,7 +114,14 @@ The functionality is structured to following CRUD: Create, Read, Update, and Del
 ## Testing
 
 I have struggled a lot when it comes to testing. However i was able to use some necessary measures to test 
-my app with various resources.
+my app with various resources. The Database Creation with MongoDB Atlas and Heroku deployment was very easy 
+because I followed the well implemented course in Code Institute Module.
+
+### Validation
+Here are the links to each validation that i tested.
+[HTML]()
+[CSS]()
+[Javascript]()
 
 # Testing User Stories from User Experience (UX) Section
 
