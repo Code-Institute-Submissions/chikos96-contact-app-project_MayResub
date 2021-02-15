@@ -117,12 +117,6 @@ I have struggled a lot when it comes to testing. However i was able to use some 
 my app with various resources. The Database Creation with MongoDB Atlas and Heroku deployment was very easy 
 because I followed the well implemented course in Code Institute Module.
 
-### Validation
-Here are the links to each validation that i tested.
-[HTML]()
-[CSS]()
-[Javascript]()
-
 # Testing User Stories from User Experience (UX) Section
 
 ### Users:
