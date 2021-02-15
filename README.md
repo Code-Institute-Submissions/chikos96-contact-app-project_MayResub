@@ -7,7 +7,9 @@ contacts. This is to address the information Architecture for processing, storin
 # UX
 
 ## UX Design
-The main color scheme for the project was mainly green and white background.
+The main color scheme for the project was mainly green and white background. It also consists of
+black text so that the users can easily see their contacts. Also the navigation is placed orderly
+to provide user experience better.
 
 ## User Stories
 
