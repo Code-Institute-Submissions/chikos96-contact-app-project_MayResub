@@ -165,6 +165,12 @@ Here are the links to each validation that i tested.
 - The validation for the forms because i failed to have the validation function when the user clicks 
 if the form is not complete.
 
+### Further Testing
+- All links were tested. Internal links all work. External links all work and open in new window.
+- All Codes passed through their respective Validators to erase syntax error.
+- To prevent arbitrary code from running and security flaw, after the development stage, 
+  I specify the debug=False before submission.
+
 ## Deployment
 
 # Github
