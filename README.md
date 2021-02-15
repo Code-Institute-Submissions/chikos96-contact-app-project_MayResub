@@ -1,8 +1,8 @@
 # Contact-App-Project
 
-For my third milestone project, I have decided to create a contact app 
-for users so that they get to keep their information about his 
-or her contact. 
+For my third milestone project, I have decided to create a contact app for users so that they get to keep their information 
+about his or her contact. The application is created to ensure that users are able to create, edit, update and delete their 
+contacts. This is to address the information Architecture for processing, storing, retrieving and updating data.
  
 # UX
 
