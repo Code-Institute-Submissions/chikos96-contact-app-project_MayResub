@@ -31,19 +31,30 @@ that they know.
 
 ## Wireframe
 I used Balsamiq to create the Wireframe for the project. This Wireframe contains
-the schematics for the ideal project
+the schematics for the ideal project:
+
+[Link to the Final Version of the Wireframe](/workspace/contact-app-project/wireframe/contact-app-wireframe-project.pdf)
 
 ## Database
 I used MongoDB Atlas as a non relational database to contain information
-about the contacts.
+about the contacts. Here is the link to the database model that i designed:
+
+[Database Model Design](/workspace/contact-app-project/database-designs/database-model-design.png)
 
 ## Data Design
 This data shows it only contains two things: the users and the contacts. 
 The functionality is structured to following CRUD: Create, Read, Update, and Delete.
+[Image of the Data Design](/workspace/contact-app-project/database-designs/database-diagram.png)
 
 # Features
 
 ## Existing Features
+
+### Structured
+
+
+### Form
+
 
 ## Features Left to Implement
 - To add some background.
@@ -80,6 +91,46 @@ I have struggled a lot when it comes to testing. However i was able to use some 
 my app with various resources.
 
 # Testing User Stories from User Experience (UX) Section
+
+### Users:
+1. As a first time user, I would like to create my own account with the option to login and logout 
+  so nobody else can access it.
+  - The user will see the Register form for first time user to sign up.
+  - Also the user will be able to log in at the Log in form if their account is already created
+  - For security measures, the form will have the werkzeug security features such as 
+    "generate_password_hash" and "check_password_hash". These hashing passwords will be good to keep their 
+    information secured.
+
+2. As a first time user, I want to navigate easily in order to find the content and be able to see my contacts.
+    - At the top of each page there is a clean navigation bar, each link describes at what section 
+    they will end up at clearly.
+    - The user will be able to see their contacts with the collaspible. It behaves as expected and each
+    collaspible-header has the name and the details of the contact including which user created by.
+
+3. As a user, i want to add my contact.
+    - The users can make use of the Add Contact form by clicking Add Contact tab in the navbar menu.
+
+4. As a user, i want to edit or delete my contact.
+    - Each relevant section provides Edit/Delete buttons which allow users to revise or delete contacts that they added.
+
+### Owner:
+1. As a owner, I want my users to be accessible to their contacts
+    - The composition of the app is clear and simple. Already at the home page, the users will be able
+    to see their contacts easily including the information that they created
+
+2. As a owner, I would like to ensure users that they are able to keep their contacts.
+    - There is enough security for the users to keep their contacts safe. In the future, i hope
+    to make more tough security on the contacts where the collaspible is accessed to each user.
+
+## Bugs
+
+### Fixed
+- I have fixed the link between the contact.py and the base.html with '{{ url_for(edit_contacts)}}'
+- I have fixed the contacts.html because i was having trouble with the wrapping of the contacts.
+
+### Unfixed
+- The validation for the forms because i failed to have the validation function when the user clicks 
+if the form is not complete.
 
 ## Deployment
 
