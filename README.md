@@ -98,24 +98,46 @@ collapsible-body encapsulates the set of data stored about a particular instance
 
 ## Tools and Libraries
 - [Materialize](https://materializecss.com/)
+    - It was used to create grid layout and styling various features such as navbar accordion, cards, buttons and
+    form to render responsive website.
 - [PEP8 Python Validator](http://pep8online.com/)
+    - To validate the python code
 - [JQuery](https://jquery.com)
+    - It was used to simplify JavaScript.
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+    - This is a web application framework used to create functions with Python that are injected into html templates.
 - [Git](https://git-scm.com/)
+    - It was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 - [Jshint](https://jshint.com/)
+    - To validate my JavaScript code.
 - [HTML Validator](https://validator.w3.org/)
+    - To validate my HTML code.
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
+    - To validate my CSS code.
+- [drawio](https://app.diagrams.net/)
+    - Used to create the database schema and data manipulation operations diagrams.
+- [dbdiagramio](https://dbdiagram.io/home)
+    - Used to create the database schema diagram online.
+- [font awesome](https://fontawesome.com/)
+    - It  was used to create grid layout and styling various features such as navbar accordion, 
+      cards, buttons, forms, and footer to render responsive website.
 
 # External Hosting
 - [MongoDB](https://www.mongodb.com/)
+    - a document-oriented cloud database used to store manage, query and retrieve data set for the app.
 - [Heroku](http://heroku.com/)
+    - It was used to deploy, manage, and scale the app.
 - [GitHub](https://github.com/)
+    - The project used the GitHub hosting service to save the project in a repository.
 
-## Testing
+# Testing
 
 I have struggled a lot when it comes to testing. However i was able to use some necessary measures to test 
 my app with various resources. The Database Creation with MongoDB Atlas and Heroku deployment was very easy 
-because I followed the well implemented course in Code Institute Module.
+because I followed the well implemented course in Code Institute Module. I used Chrome DevTools lighthouse
+to test the app to see how is it functioning well.
+
+[Screenshot of lighthous testing](/workspace/contact-app-project/images/ligthouse-devtools-screenshot.png)
 
 # Testing User Stories from User Experience (UX) Section
 
@@ -123,7 +145,8 @@ because I followed the well implemented course in Code Institute Module.
 1. As a first time user, I would like to create my own account with the option to login and logout 
   so nobody else can access it.
   - The user will see the Register form for first time user to sign up.
-  - Also the user will be able to log in at the Log in form if their account is already created
+  - Also the user will be able to log in at the Log in form if their account is already created.
+  - The user can log out at the Log Out form if they want to leave their account.
   - For security measures, the form will have the werkzeug security features such as 
     "generate_password_hash" and "check_password_hash". These hashing passwords will be good to keep their 
     information secured.
@@ -157,17 +180,20 @@ because I followed the well implemented course in Code Institute Module.
 
 ### Unfixed
 - The validation for the forms because i failed to have the validation function when the user clicks 
-if the form is not complete.
+if the form is not complete or incorrect.
 
 ### Further Testing
-- All links were tested. Internal links all work. External links all work and open in new window.
+- All the links were tested. They are all work perfectly.
+- I have tested my app with Google Chrome, Microsoft Edge and Safari.
 - All Codes passed through their respective Validators to erase syntax error.
+- The button links works as expected.
 - To prevent arbitrary code from running and security flaw, after the development stage, 
   I specify the debug=False before submission.
+- I have tested my with my IPhone and IPad.
 
-## Deployment
+# Deployment
 
-# Github
+## Github
 The app was developed on GitPod, using git and GitHub to host the repository 
 as it cannot host a Python project on GitHub Page which only allows for static websites. 
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
