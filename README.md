@@ -53,7 +53,7 @@ the schematics for the ideal project:
 I used MongoDB Atlas as a non-relational database to contain information
 about the contacts. Here is the link to the database model that I designed:
 
-[Database Model Design](/workspace/contact-app-project/database-designs/database-model-design.png)
+[Database Model Design](/workspace/contact-app-project/database-designs/database-design.png)
 
 ## Data Design
 This data shows it only contains two things: the users and the contacts. 
